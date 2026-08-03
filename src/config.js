@@ -1,1 +1,2 @@
-export const API_URL = import.meta.env.VITE_API_URL || 'https://backend.complaint.cybersecurepakistan.pk';
+const rawUrl = import.meta.env.VITE_API_URL || 'https://cybersecurepk-complaint-backend.onrender.com';
+export const API_URL = rawUrl.replace(/\/$/, '');
